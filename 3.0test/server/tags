@@ -1,0 +1,97 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC:=gcc$/;"	m
+CD_PTH_SZ	fs_ahead.h	6;"	d
+CFLAGS	Makefile	/^CFLAGS:= -g -Wall -I \/usr\/include\/mysql\/$/;"	m
+CIPTHER_SZ	fs_ahead.h	63;"	d
+CPPFLAGS	Makefile	/^CPPFLAGS:=$/;"	m
+ConnNode_t	conn_que.h	/^} ConnNode_t, *pConnNode_t;$/;"	t	typeref:struct:node
+ConnQue_t	conn_que.h	/^} ConnQue_t, *pConnQue_t;$/;"	t	typeref:struct:__anon1
+ELF	Makefile	/^ELF:=server$/;"	m
+EN_NM_SZ	fs_ahead.h	7;"	d
+FileSysInfo_t	fs_ahead.h	/^} FileSysInfo_t, *pFileSysInfo_t;$/;"	t	typeref:struct:__anon5
+MAX_CLIENT	tcp_init.h	5;"	d
+Mysql_t	fs_ahead.h	/^} Mysql_t, *pMysql_t;$/;"	t	typeref:struct:__anon3
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+QUERY_SZ	fs_ahead.h	8;"	d
+Query_t	fs_ahead.h	/^} Query_t, *pQuery_t;$/;"	t	typeref:struct:__anon2
+RANDOM_LENTH	fs_ahead.h	62;"	d
+Result_t	fs_ahead.h	/^} Result_t, *pResult;$/;"	t	typeref:struct:__anon4
+SALT_SZ	fs_ahead.h	61;"	d
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+TABLE_SZ	fs_ahead.h	5;"	d
+TRAIN_BUF_SZ	trans_ahead.h	4;"	d
+Train	trans_ahead.h	/^} Train;$/;"	t	typeref:struct:__anon7
+USR_NM_SZ	fs_ahead.h	60;"	d
+UserInfo_t	fs_ahead.h	/^} UserInfo_t, *pUserInfo_t;$/;"	t	typeref:struct:__anon6
+__CONN_QUE_H__	conn_que.h	2;"	d
+__TCP_INIT_H__	tcp_init.h	2;"	d
+__TRANS_AHEAD_H__	trans_ahead.h	2;"	d
+__ahead_h__	ahead.h	2;"	d
+__fs_ahead_h__	fs_ahead.h	2;"	d
+buf	fs_ahead.h	/^    char buf[QUERY_SZ];$/;"	m	struct:__anon2
+buf	trans_ahead.h	/^    char buf[TRAIN_BUF_SZ];$/;"	m	struct:__anon7
+ciphertext	fs_ahead.h	/^    char ciphertext[CIPTHER_SZ];$/;"	m	struct:__anon6
+codePath	fs_ahead.h	/^    int codePath[CD_PTH_SZ];$/;"	m	struct:__anon5
+conn	fs_ahead.h	/^    MYSQL *conn;$/;"	m	struct:__anon3
+conn	fs_ahead.h	/^    MYSQL *conn;$/;"	m	struct:__anon5
+conn_que_delete	conn_que.c	/^int conn_que_delete(pConnQue_t pcq, pConnNode_t pdel)$/;"	f
+conn_que_exist	conn_que.c	/^int conn_que_exist(pConnQue_t pcq, pConnNode_t *ppfind, int fdFind)$/;"	f
+conn_que_init	conn_que.c	/^int conn_que_init(pConnQue_t pcq, int max)$/;"	f
+conn_que_insert	conn_que.c	/^int conn_que_insert(pConnQue_t pcq, int newfd)$/;"	f
+ctl_code	trans_ahead.h	/^    int ctl_code;$/;"	m	struct:__anon7
+dataLenth	trans_ahead.h	/^    int dataLenth;$/;"	m	struct:__anon7
+database	fs_ahead.h	/^    const char* database;$/;"	m	struct:__anon3
+entryName	fs_ahead.h	/^    char entryName[EN_NM_SZ];$/;"	m	struct:__anon5
+entryType	fs_ahead.h	/^    int entryType;$/;"	m	struct:__anon5
+file_sys_cd	fs_cd.c	/^int file_sys_cd(pFileSysInfo_t pfs)$/;"	f
+file_sys_dir_empty	fs_dir_empty.c	/^int file_sys_dir_empty(pFileSysInfo_t pfs)$/;"	f
+file_sys_entry_exist	fs_entry_exist.c	/^int file_sys_entry_exist(pFileSysInfo_t pfs)$/;"	f
+file_sys_ls	fs_ls.c	/^int file_sys_ls(pFileSysInfo_t pfs)$/;"	f
+file_sys_md5_exist	fs_md5_exist.c	/^int file_sys_md5_exist()$/;"	f
+file_sys_mkdir	fs_mkdir.c	/^int file_sys_mkdir(pFileSysInfo_t pfs)$/;"	f
+file_sys_puts	fs_puts.c	/^int file_sys_puts(pFileSysInfo_t pfs)$/;"	f
+file_sys_pwd	fs_pwd.c	/^int file_sys_pwd(pFileSysInfo_t pfs) $/;"	f
+file_sys_rm	fs_rm.c	/^int file_sys_rm(pFileSysInfo_t pfs)$/;"	f
+file_sys_rmdir	fs_rmdir.c	/^int file_sys_rmdir(pFileSysInfo_t pfs)$/;"	f
+file_sys_type	fs_file_type.c	/^char file_sys_type(int entryType)                                   $/;"	f
+genRandomString	usr_init.c	/^char* genRandomString(int lenth)$/;"	f
+main	main.c	/^int main(int argc, char ** argv)$/;"	f
+max_conn	conn_que.h	/^    int max_conn; $/;"	m	struct:__anon1
+mysqlInit	mysql_init.c	/^int mysqlInit(pMysql_t pMy)$/;"	f
+newfd	conn_que.h	/^    int newfd;$/;"	m	struct:node
+node	conn_que.h	/^typedef struct node {$/;"	s
+opsCode	fs_ahead.h	/^    int opsCode;$/;"	m	struct:__anon5
+pConnNode_t	conn_que.h	/^} ConnNode_t, *pConnNode_t;$/;"	t	typeref:struct:node
+pConnQue_t	conn_que.h	/^} ConnQue_t, *pConnQue_t;$/;"	t	typeref:struct:__anon1
+pFileSysInfo_t	fs_ahead.h	/^} FileSysInfo_t, *pFileSysInfo_t;$/;"	t	typeref:struct:__anon5
+pMysql_t	fs_ahead.h	/^} Mysql_t, *pMysql_t;$/;"	t	typeref:struct:__anon3
+pNext	conn_que.h	/^    struct node *pNext;$/;"	m	struct:node	typeref:struct:node::node
+pQuery_t	fs_ahead.h	/^} Query_t, *pQuery_t;$/;"	t	typeref:struct:__anon2
+pResult	fs_ahead.h	/^} Result_t, *pResult;$/;"	t	typeref:struct:__anon4
+pUserInfo_t	fs_ahead.h	/^} UserInfo_t, *pUserInfo_t;$/;"	t	typeref:struct:__anon6
+password	fs_ahead.h	/^    const char* password;$/;"	m	struct:__anon3
+pathPointer	fs_ahead.h	/^    int pathPointer;$/;"	m	struct:__anon5
+pfs	conn_que.h	/^    pFileSysInfo_t pfs;$/;"	m	struct:node
+phead	conn_que.h	/^    pConnNode_t phead;$/;"	m	struct:__anon1
+ptail	conn_que.h	/^    pConnNode_t ptail;$/;"	m	struct:__anon1
+res	fs_ahead.h	/^    MYSQL_RES *res;$/;"	m	struct:__anon4
+reuseAddr	tcp_init.c	/^int reuseAddr(int sockFd)$/;"	f
+row	fs_ahead.h	/^    MYSQL_ROW row;$/;"	m	struct:__anon4
+salt	fs_ahead.h	/^    char salt[SALT_SZ];$/;"	m	struct:__anon6
+server	fs_ahead.h	/^    const char* server;$/;"	m	struct:__anon3
+size	conn_que.h	/^    int size;$/;"	m	struct:__anon1
+table	fs_ahead.h	/^    char table[TABLE_SZ];$/;"	m	struct:__anon5
+tcpInit	tcp_init.c	/^int tcpInit(int *psockFd, const char *ip, const char *port)$/;"	f
+token	conn_que.h	/^    char* token[40];$/;"	m	struct:node
+trans_recv_cycle	trans_cycle.c	/^int trans_recv_cycle(int newfd, void *buf, int lenth)$/;"	f
+trans_send_cycle	trans_cycle.c	/^int trans_send_cycle(int newfd, const void *buf, int lenth)$/;"	f
+user	fs_ahead.h	/^    const char* user;$/;"	m	struct:__anon3
+userID	fs_ahead.h	/^    int userID;$/;"	m	struct:__anon5
+userID	fs_ahead.h	/^    int userID;$/;"	m	struct:__anon6
+userName	fs_ahead.h	/^    char userName[USR_NM_SZ];$/;"	m	struct:__anon6
+usr_sys_usr_init	usr_init.c	/^int usr_sys_usr_init(pUserInfo_t* ppui)$/;"	f
