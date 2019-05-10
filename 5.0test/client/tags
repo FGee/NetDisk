@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC:=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS:= -g -Wall -I \/usr\/include\/mysql\/$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS:=$/;"	m
+Cmd_t	cmd.h	/^} Cmd_t, *pCmd_t;$/;"	t	typeref:struct:__anon2
+ELF	Makefile	/^ELF:=client$/;"	m
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+TRAIN_BUF_SZ	trans_ahead_cli.h	4;"	d
+TokenInfo_t	token.h	/^} TokenInfo_t, *pTokenInfo_t;$/;"	t	typeref:struct:__anon1
+Train	trans_ahead_cli.h	/^} Train;$/;"	t	typeref:struct:__anon3
+__AHEAD_CLI_H__	ahead_cli.h	2;"	d
+__CMD_H__	cmd.h	2;"	d
+__LOG_REG_H__	log_reg.h	2;"	d
+__TCP_CLI_H__	tcp_cli.h	2;"	d
+__TOKEN_H__	token.h	2;"	d
+__TRANS_AHEAD_CLI_H__	trans_ahead_cli.h	2;"	d
+buf	trans_ahead_cli.h	/^    char buf[TRAIN_BUF_SZ];$/;"	m	struct:__anon3
+cmd_num_verify	cmd_separate.c	/^int cmd_num_verify(char *cmdBuf)$/;"	f
+cmd_separate	cmd_separate.c	/^int cmd_separate(char *cmdBuf, pCmd_t pcmd)$/;"	f
+command	cmd.h	/^    char command[16];$/;"	m	struct:__anon2
+ctl_code	trans_ahead_cli.h	/^    int ctl_code;$/;"	m	struct:__anon3
+dataLenth	trans_ahead_cli.h	/^    int dataLenth;$/;"	m	struct:__anon3
+login_register	login_register.c	/^int login_register(const int sockFd, pTokenInfo_t pti)$/;"	f
+main	main.c	/^int main(int argc, char** argv)$/;"	f
+object	cmd.h	/^    char object[32];$/;"	m	struct:__anon2
+pCmd_t	cmd.h	/^} Cmd_t, *pCmd_t;$/;"	t	typeref:struct:__anon2
+pTokenInfo_t	token.h	/^} TokenInfo_t, *pTokenInfo_t;$/;"	t	typeref:struct:__anon1
+tcp_init	tcp_init_cli.c	/^int tcp_init(int* psockFd)$/;"	f
+token	token.h	/^    unsigned char token[40];$/;"	m	struct:__anon1
+token_gener	token_gener.c	/^int token_gener(pTokenInfo_t* ppti)$/;"	f
+trans_recv_cycle	trans_cycle_cli.c	/^int trans_recv_cycle(int newfd, void *buf, int lenth)$/;"	f
+trans_send_cycle	trans_cycle_cli.c	/^int trans_send_cycle(int newfd, const void *buf, int lenth)$/;"	f
+userName	token.h	/^    char userName[32];$/;"	m	struct:__anon1
