@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC:=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS:= -g -Wall -I \/usr\/include\/mysql\/$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS:=$/;"	m
+Cmd_t	cmd.h	/^} Cmd_t, *pCmd_t;$/;"	t	typeref:struct:__anon4
+ELF	Makefile	/^ELF:=client$/;"	m
+Epoll_t	my_epoll.h	/^} Epoll_t, *pEpoll_t;$/;"	t	typeref:struct:__anon5
+Factory_t	factory.h	/^} Factory_t, *pFactory_t;$/;"	t	typeref:struct:__anon1
+FileInfo_t	file.h	/^} FileInfo_t, *pFileInfo_t;$/;"	t	typeref:struct:__anon3
+MD5_SIZE	file_md5.c	6;"	d	file:
+MD5_STR_LEN	file_md5.c	7;"	d	file:
+NM_SZ	token.h	4;"	d
+Node_t	work_que.h	/^} Node_t, *pNode_t;$/;"	t	typeref:struct:node
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+PATH_SZ	token.h	5;"	d
+Que_t	work_que.h	/^} Que_t, *pQue_t;$/;"	t	typeref:struct:__anon6
+READ_DATA_SIZE	file_md5.c	5;"	d	file:
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+TK_SZ	token.h	6;"	d
+TRAIN_BUF_SZ	trans_ahead_cli.h	4;"	d
+TokenInfo_t	token.h	/^} TokenInfo_t, *pTokenInfo_t;$/;"	t	typeref:struct:__anon2
+Train_t	trans_ahead_cli.h	/^} Train_t, *pTrain_t;$/;"	t	typeref:struct:__anon7
+__CMD_H__	cmd.h	2;"	d
+__FACTORY_H__	factory.h	2;"	d
+__FILE_H__	file.h	2;"	d
+__LOG_REG_H__	log_reg.h	2;"	d
+__MY_EPOLL_H__	my_epoll.h	2;"	d
+__TCP_CLI_H__	tcp_cli.h	2;"	d
+__THREAD_H__	thread.h	2;"	d
+__TOKEN_H__	token.h	2;"	d
+__TRANS_AHEAD_CLI_H__	trans_ahead_cli.h	2;"	d
+__WORK_QUE_H__	work_que.h	2;"	d
+buf	trans_ahead_cli.h	/^    char buf[TRAIN_BUF_SZ];$/;"	m	struct:__anon7
+capacity	work_que.h	/^    int capacity;$/;"	m	struct:__anon6
+cmd_load	cmd_deal.c	/^int cmd_load(pCmd_t pcmd, int wrdNum, pTrain_t pt, pFactory_t pfs, pTokenInfo_t pto)$/;"	f
+cmd_separate	cmd_separate.c	/^int cmd_separate(char *cmdBuf, pCmd_t pcmd)$/;"	f
+cmd_task_to_que	cmd_task_to_que.c	/^int cmd_task_to_que(pFactory_t pf, pTokenInfo_t pti)$/;"	f
+command	cmd.h	/^    char command[16];$/;"	m	struct:__anon4
+cond	factory.h	/^    pthread_cond_t cond;\/\/the condition arugement that sync between main thread and child thread$/;"	m	struct:__anon1
+ctl_code	trans_ahead_cli.h	/^    int ctl_code;$/;"	m	struct:__anon7
+dataLenth	trans_ahead_cli.h	/^    int dataLenth;$/;"	m	struct:__anon7
+epfd	my_epoll.h	/^    int epfd;$/;"	m	struct:__anon5
+event	my_epoll.h	/^    struct epoll_event event;$/;"	m	struct:__anon5	typeref:struct:__anon5::epoll_event
+eventCapacity	my_epoll.h	/^    int eventCapacity;$/;"	m	struct:__anon5
+factoryDestroy	factory.c	/^int factoryDestroy(pFactory_t pf)$/;"	f
+factoryInit	factory.c	/^int factoryInit(pFactory_t pf)$/;"	f
+factoryStart	factory.c	/^int factoryStart(pFactory_t pf, pThread_task_t pttFunc)$/;"	f
+factory_s_init	factory_s_init.c	/^int factory_s_init(pFactory_t pfs)$/;"	f
+fileMD5	file.h	/^    char fileMD5[32];$/;"	m	struct:__anon3
+fileName	file.h	/^    char fileName[32];$/;"	m	struct:__anon3
+fileName	token.h	/^    char fileName[NM_SZ];$/;"	m	struct:__anon2
+filePath	file.h	/^    char filePath[128];$/;"	m	struct:__anon3
+fileSize	file.h	/^    int fileSize;$/;"	m	struct:__anon3
+file_exist	file_exist.c	/^int file_exist(pFileInfo_t pfi)$/;"	f
+file_md5	file_md5.c	/^int file_md5(const char *file_path, char *md5_str)$/;"	f
+file_puts_recv_big	file_puts_send_big.c	/^int file_puts_recv_big(pFileInfo_t pfi, int sockFd)$/;"	f
+file_puts_recv_small	file_puts_send_small.c	/^int file_puts_recv_small(pFileInfo_t pfi, int sockFd)$/;"	f
+login_register	login_register.c	/^int login_register(const int sockFd, pTokenInfo_t pti)$/;"	f
+main	main.c	/^int main(int argc, char** argv)$/;"	f
+moniterNum	my_epoll.h	/^    int moniterNum;$/;"	m	struct:__anon5
+my_epoll_init	my_epoll_init.c	/^int my_epoll_init(pEpoll_t pep)$/;"	f
+node	work_que.h	/^typedef struct node {$/;"	s
+object	cmd.h	/^    char object[32];$/;"	m	struct:__anon4
+pCmd_t	cmd.h	/^} Cmd_t, *pCmd_t;$/;"	t	typeref:struct:__anon4
+pEpoll_t	my_epoll.h	/^} Epoll_t, *pEpoll_t;$/;"	t	typeref:struct:__anon5
+pFactory_t	factory.h	/^} Factory_t, *pFactory_t;$/;"	t	typeref:struct:__anon1
+pFileInfo_t	file.h	/^} FileInfo_t, *pFileInfo_t;$/;"	t	typeref:struct:__anon3
+pNext	work_que.h	/^    struct node *pNext;$/;"	m	struct:node	typeref:struct:node::node
+pNode_t	work_que.h	/^} Node_t, *pNode_t;$/;"	t	typeref:struct:node
+pQue_t	work_que.h	/^} Que_t, *pQue_t;$/;"	t	typeref:struct:__anon6
+pThread_task_t	factory.h	/^typedef void* (*pThread_task_t)(void *pArg);$/;"	t
+pTokenInfo_t	token.h	/^} TokenInfo_t, *pTokenInfo_t;$/;"	t	typeref:struct:__anon2
+pTrain_t	trans_ahead_cli.h	/^} Train_t, *pTrain_t;$/;"	t	typeref:struct:__anon7
+pathName	token.h	/^    char pathName[PATH_SZ];$/;"	m	struct:__anon2
+phead	work_que.h	/^    pNode_t phead;$/;"	m	struct:__anon6
+ptail	work_que.h	/^    pNode_t ptail;$/;"	m	struct:__anon6
+pthid	factory.h	/^    pthread_t *pthid;\/\/store the start pointer point to thread id$/;"	m	struct:__anon1
+ptokenInfo	work_que.h	/^    pTokenInfo_t ptokenInfo;$/;"	m	struct:node
+queGet	work_que.c	/^int queGet(pQue_t pq, pNode_t *pget)$/;"	f
+queInit	work_que.c	/^int queInit(pQue_t pq, int cap)$/;"	f
+queInsert	work_que.c	/^int queInsert(pQue_t pq, pNode_t pnew)$/;"	f
+que_mutex	work_que.h	/^    pthread_mutex_t que_mutex;\/\/the mutex of que$/;"	m	struct:__anon6
+readyNum	my_epoll.h	/^    int readyNum;$/;"	m	struct:__anon5
+size	work_que.h	/^    int size;$/;"	m	struct:__anon6
+startFlag	factory.h	/^    short startFlag;\/\/ the signal of factory start$/;"	m	struct:__anon1
+tcp_init	tcp_init_cli.c	/^int tcp_init(int* psockFd)$/;"	f
+threadNum	factory.h	/^    int threadNum;\/\/the thread number which will to create$/;"	m	struct:__anon1
+thread_gets	thread_gets.c	/^void* thread_gets(void *pArg)$/;"	f
+thread_puts	thread_puts.c	/^void* thread_puts(void *pArg)$/;"	f
+thread_puts_doing_ser	thread_puts_doing.c	/^int thread_puts_doing_ser(pFactory_t pf, pNode_t pget, int sockFd)$/;"	f
+token	token.h	/^    unsigned char token[TK_SZ];$/;"	m	struct:__anon2
+token_gener	token_gener.c	/^int token_gener(pTokenInfo_t pti)$/;"	f
+trans_recv_cycle	trans_cycle_cli.c	/^int trans_recv_cycle(int newfd, void *buf, int lenth)$/;"	f
+trans_send_cycle	trans_cycle_cli.c	/^int trans_send_cycle(int newfd, const void *buf, int lenth)$/;"	f
+userName	token.h	/^    char userName[NM_SZ];$/;"	m	struct:__anon2
+work_que	factory.h	/^    Que_t work_que;\/\/store the task that main thread produce$/;"	m	struct:__anon1
